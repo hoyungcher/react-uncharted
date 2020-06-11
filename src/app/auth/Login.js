@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Form from 'react-bootstrap/Form';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 
 export default class Login extends Component {
@@ -43,23 +47,36 @@ export default class Login extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={this.state.email}
-            onChange={this.handleChange}
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={this.state.password}
-            onChange={this.handleChange}
-          />
-          <button type="submit" >Login</button>
-        </form>
+        <Container className="mt-5">
+          <Col md={{ span: 6, offset: 3 }} sm={{ span: 10, offset: 1 }}>
+            <h1>Login</h1>
+            <Form onSubmit={this.handleSubmit} >
+              <Form.Group controlId="formGroupEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control
+                  type="email"
+                  name="email"
+                  placeholder="Enter email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="formGroupPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control
+                  type="password"
+                  name="password"
+                  placeholder="Type your password"
+                  value={this.state.password}
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
+              <Button type="submit" className="my-1">
+                Login
+              </Button>
+            </Form>
+          </Col>
+        </Container>
       </div>
     );
   }

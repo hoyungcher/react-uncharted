@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Registration from "./auth/Registration";
+import LoginNavbar from "./navbar/LoginNavbar.js";
 
 export default class RegistrationPage extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ export default class RegistrationPage extends Component {
   render() {
     return (
       <div>
-        <h1>Registration</h1>
+        <LoginNavbar />
         <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} />
       </div>
     );

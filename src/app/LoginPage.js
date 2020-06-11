@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Login from "./auth/Login";
-import Navbar from "./navbar/Navbar.js";
+import LoginNavbar from "./navbar/LoginNavbar.js";
 
 export default class LoginPage extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ export default class LoginPage extends Component {
   render() {
     return (
       <div>
-        <p>Login</p>
+        <LoginNavbar />
         <Login handleSuccessfulAuth={this.handleSuccessfulAuth} />
       </div>
     );

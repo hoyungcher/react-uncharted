@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+import Navbar from "./navbar/Navbar.js";
 import axios from 'axios';
 
 export default class Dashboard extends Component {
@@ -21,6 +22,7 @@ export default class Dashboard extends Component {
   render() {
     return (
       <div>
+        <Navbar loggedInStatus={this.props.loggedInStatus} userData={this.props.userData} />
         <h1>Dashboard</h1>
         <h2>Welcome, {this.props.userData.first_name}</h2>
         <button onClick={() => this.handleLogoutClick()}>Log out</button>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Registration from "./auth/Registration";
 import Login from "./auth/Login";
 import { Link } from 'react-router-dom';
-import Navbar from "./navbar/Navbar.js";
+import Navbar from "./components/navbar/Navbar.js";
 
 export default class Home extends Component {
   constructor(props) {

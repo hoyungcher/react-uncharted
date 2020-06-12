@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import Navbar from "./navbar/Navbar.js";
+import Navbar from "./components/navbar/Navbar.js";
 import axios from 'axios';
 
 export default class Dashboard extends Component {

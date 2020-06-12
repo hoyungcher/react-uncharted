@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Login from "./auth/Login";
-import LoginNavbar from "./navbar/LoginNavbar.js";
+import LoginNavbar from "./components/navbar/LoginNavbar.js";
 
 export default class LoginPage extends Component {
   constructor(props) {

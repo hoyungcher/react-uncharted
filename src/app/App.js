@@ -6,6 +6,7 @@ import LoginPage from './LoginPage';
 import RegistrationPage from './RegistrationPage';
 import axios from 'axios';
 import ProtectedRoute from './hoc/ProtectedRoute';
+import Categories from './components/categories/Categories';
 
 export default class App extends Component {
   constructor() {
@@ -96,9 +97,16 @@ export default class App extends Component {
                 />
               )}
             />
-            <Route>
-
-            </Route>
+            <Route
+              exact path={'/categories'}
+              render={ props => (
+                <Categories {...props}
+                  handleLogin={this.handleLogin}
+                  loggedInStatus={this.state.loggedInStatus}
+                  userData={this.state.user}
+                />
+              )}
+            />
           </Switch>
         </BrowserRouter>
       </div>

@@ -15,9 +15,15 @@ const Categories = (props) => {
     .catch(response => console.log(response))
   }, [categories.length])
 
+
+  const categoriesList = categories.map( category => {
+    return(<li key={category.attributes.slug}>{category.attributes.name}</li>)
+  })
+
   return (
     <div>
       <Navbar loggedInStatus={props.loggedInStatus} userData={props.userData} />
+      <ul>{categoriesList}</ul>
     </div>
   )
 }

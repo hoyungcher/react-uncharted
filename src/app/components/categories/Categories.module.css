@@ -1,0 +1,22 @@
+.OuterContainer {
+  text-align: center;
+  width:100%;
+}
+
+.Container {
+  margin: auto;
+}
+
+.CategoriesList {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  text-align: center;
+}
+
+.Font {
+  font-family: 'Jost';
+  margin: 20px auto;
+  padding: 0px;
+}

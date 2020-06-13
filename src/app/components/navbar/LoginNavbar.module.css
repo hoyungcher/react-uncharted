@@ -1,17 +1,33 @@
 .LoginNavbar {
-  background-color: green;
+  background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 12px 0px;
+  padding: 12px;
+  border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 .Logo {
-  color: white;
+  font-family: 'Metropolis';
+  color: black;
   text-decoration: none;
-  margin: 0px;
+  margin: 0px 20px 0px 6px;
+  font-size: 30px;
+}
+
+.UserButton {
+  height: 40px;
+  padding: 4px;
+  font-size: 20px;
+  margin: 0px 6px;
+  color: black;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-family: 'Poppins';
+  font-weight: bold;
 }
 
 .Button {
+  height: 40px;
   padding: 4px;
   font-size: 20px;
   margin: 0px 6px;
@@ -20,8 +36,11 @@
   border-radius: 4px;
   border: 1px solid black;
   padding: 4px 12px;
+  font-family: 'Poppins';
+  font-weight: bold;
 }
 
 .Buttons {
   display: flex;
+  align-items: center;
 }

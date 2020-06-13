@@ -39,12 +39,20 @@
   .Image {
     max-width: calc(33.3vw - 40px);
   }
+  .Name {
+    font-size: 36px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .Image {
     max-width: calc(25vw - 40px);
   }
+
+  .Name {
+    font-size: 32px;
+  }
+
 }
 
 

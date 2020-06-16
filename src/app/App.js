@@ -7,6 +7,7 @@ import RegistrationPage from './RegistrationPage';
 import axios from 'axios';
 import ProtectedRoute from './hoc/ProtectedRoute';
 import Categories from './components/categories/Categories';
+import Category from './components/categories/Category';
 
 export default class App extends Component {
   constructor() {
@@ -101,6 +102,16 @@ export default class App extends Component {
               exact path={'/categories'}
               render={ props => (
                 <Categories {...props}
+                  handleLogin={this.handleLogin}
+                  loggedInStatus={this.state.loggedInStatus}
+                  userData={this.state.user}
+                />
+              )}
+            />
+            <Route
+              exact path={'/categories/:slug'}
+              render={ props => (
+                <Category {...props}
                   handleLogin={this.handleLogin}
                   loggedInStatus={this.state.loggedInStatus}
                   userData={this.state.user}

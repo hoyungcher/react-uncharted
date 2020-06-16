@@ -1,0 +1,14 @@
+.OuterContainer {
+  text-align: center;
+  width:100%;
+}
+
+.Container {
+  margin: auto;
+}
+
+.Font {
+  font-family: 'Jost';
+  margin: 20px auto;
+  padding: 0px;
+}
